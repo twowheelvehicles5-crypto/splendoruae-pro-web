@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import FloatingCTA from "./FloatingCTA";
+import ChatBot from "@/components/ChatBot/ChatBot";
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
       <Footer />
       <FloatingCTA />
+      <ChatBot />
     </div>
   );
 };
