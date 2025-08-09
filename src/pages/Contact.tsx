@@ -408,7 +408,7 @@ const Contact = () => {
             </Button>
             <Button variant="accent" size="lg" asChild>
               <a 
-                href="https://web.whatsapp.com/send?phone=971562578722" 
+                href="https://api.whatsapp.com/send?phone=971562578722" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
