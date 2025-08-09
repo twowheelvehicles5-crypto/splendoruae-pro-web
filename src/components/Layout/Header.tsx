@@ -76,7 +76,7 @@ const Header = () => {
               <Link to="/contact">Get Quote</Link>
             </Button>
             <Button variant="cta" asChild>
-              <a href="https://wa.me/971501234567">WhatsApp</a>
+              <a href="https://web.whatsapp.com/send?phone=971562578722">WhatsApp</a>
             </Button>
           </div>
 
@@ -112,7 +112,7 @@ const Header = () => {
                   <Link to="/contact">Get Quote</Link>
                 </Button>
                 <Button variant="cta" asChild>
-                  <a href="https://wa.me/971501234567">WhatsApp</a>
+                  <a href="https://web.whatsapp.com/send?phone=971562578722">WhatsApp</a>
                 </Button>
               </div>
             </div>

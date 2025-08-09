@@ -81,7 +81,7 @@ const Footer = () => {
             <p>&copy; 2024 SplendorUAE. All rights reserved.</p>
             <div className="flex items-center gap-4 mt-4 md:mt-0">
               <a 
-                href="https://wa.me/971501234567" 
+                href="https://web.whatsapp.com/send?phone=971562578722" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-accent hover:text-accent/80 transition-smooth"
