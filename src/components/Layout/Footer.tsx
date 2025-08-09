@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageSquare } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -80,6 +80,15 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm opacity-90">
             <p>&copy; 2024 SplendorUAE. All rights reserved.</p>
             <div className="flex items-center gap-4 mt-4 md:mt-0">
+              <a 
+                href="https://wa.me/971501234567" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-accent hover:text-accent/80 transition-smooth"
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span>WhatsApp</span>
+              </a>
               <Link to="/privacy" className="hover:text-accent transition-smooth">Privacy Policy</Link>
               <Link to="/terms" className="hover:text-accent transition-smooth">Terms of Service</Link>
             </div>
