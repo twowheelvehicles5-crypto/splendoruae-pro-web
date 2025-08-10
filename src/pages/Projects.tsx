@@ -6,11 +6,17 @@ import { Calendar, MapPin, Building, Wrench } from "lucide-react";
 import chwPiping from "@/assets/chw-piping.jpg";
 import hvacDuctwork from "@/assets/hvac-ductwork.jpg";
 import valvePackage from "@/assets/valve-package.jpg";
+import officeMepInstallation from "@/assets/office-mep-installation.jpg";
+import btuAssembly from "@/assets/btu-assembly.jpg";
+import hotelMepSystems from "@/assets/hotel-mep-systems.jpg";
+import villaHvac from "@/assets/villa-hvac.jpg";
+import hospitalMep from "@/assets/hospital-mep.jpg";
+import jumeirahVillaMep from "@/assets/jumeirah-villa-mep.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      image: chwPiping,
+      image: officeMepInstallation,
       title: "REVOULT OFFICE, CENTRAL PARK OFFICE TOWER-1",
       scope: "CHW Piping, FCU Installation & Valve Package",
       status: "Ongoing",
@@ -22,7 +28,7 @@ const Projects = () => {
       duration: "8 months"
     },
     {
-      image: hvacDuctwork,
+      image: btuAssembly,
       title: "TRYANO-YASMALL",
       scope: "BTU Assembly Installation",
       status: "Completed",
@@ -34,7 +40,7 @@ const Projects = () => {
       duration: "3 months"
     },
     {
-      image: valvePackage,
+      image: hotelMepSystems,
       title: "THE VIDA DUBAI MALL",
       scope: "Complete FCU & CHW System Installation",
       status: "Completed",
@@ -46,7 +52,7 @@ const Projects = () => {
       duration: "10 months"
     },
     {
-      image: chwPiping,
+      image: villaHvac,
       title: "QARYAT AL HIDD DEVELOPMENT",
       scope: "FCUs, Valve Package & CHW System",
       status: "Completed",
@@ -58,7 +64,7 @@ const Projects = () => {
       duration: "9 months"
     },
     {
-      image: hvacDuctwork,
+      image: jumeirahVillaMep,
       title: "Villa# 09, AL JUMAIRAH ISLAND",
       scope: "Luxury Villa MEP Systems",
       status: "Completed",
@@ -70,7 +76,7 @@ const Projects = () => {
       duration: "4 months"
     },
     {
-      image: valvePackage,
+      image: hospitalMep,
       title: "NMC Hospital Extension",
       scope: "Hospital MEP Infrastructure",
       status: "Completed",
@@ -80,6 +86,18 @@ const Projects = () => {
       description: "Proposed B+G+3+ Roof extension including FCUs, valve package, CHW piping with pressure test and insulation, CHW Riser, and Pumps and Heat Exchanger with underground Piping.",
       value: "AED 4.1M",
       duration: "12 months"
+    },
+    {
+      image: valvePackage,
+      title: "MIDTOWN DUBAI",
+      scope: "FCU & Valve Package Installation",
+      status: "Completed",
+      date: "Oct 2022",
+      location: "Dubai, UAE",
+      client: "Midtown Development",
+      description: "Installation of FCU & Valve Package with pressure test, insulation and foster for modern commercial development.",
+      value: "AED 1.2M",
+      duration: "6 months"
     },
     {
       image: chwPiping,
@@ -106,7 +124,7 @@ const Projects = () => {
       duration: "5 months"
     },
     {
-      image: hvacDuctwork,
+      image: hospitalMep,
       title: "Fakeeh University Hospital",
       scope: "Comprehensive Ducting Installation",
       status: "Completed",
@@ -118,7 +136,7 @@ const Projects = () => {
       duration: "8 months"
     },
     {
-      image: chwPiping,
+      image: officeMepInstallation,
       title: "Success Point College",
       scope: "Complete HVAC & CHW System",
       status: "Ongoing",
@@ -130,7 +148,7 @@ const Projects = () => {
       duration: "10 months"
     },
     {
-      image: chwPiping,
+      image: villaHvac,
       title: "City Life Al Tallha - Ajman",
       scope: "FCUs, CHW Piping, Valve Package Installation",
       status: "Completed",
@@ -142,7 +160,7 @@ const Projects = () => {
       duration: "8 months"
     },
     {
-      image: hvacDuctwork,
+      image: officeMepInstallation,
       title: "Business Bay Commercial Tower",
       scope: "HVAC System Installation & Ductwork",
       status: "Ongoing",
@@ -154,7 +172,7 @@ const Projects = () => {
       duration: "12 months"
     },
     {
-      image: valvePackage,
+      image: hotelMepSystems,
       title: "Marina Heights Residential",
       scope: "Valve Package & Heat Exchanger Setup",
       status: "Completed",
@@ -190,7 +208,7 @@ const Projects = () => {
       duration: "7 months"
     },
     {
-      image: valvePackage,
+      image: villaHvac,
       title: "Green Valley Villas",
       scope: "Complete MEP Package",
       status: "Ongoing",
