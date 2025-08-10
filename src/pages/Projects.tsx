@@ -10,16 +10,76 @@ import valvePackage from "@/assets/valve-package.jpg";
 const Projects = () => {
   const projects = [
     {
-      image: valvePackage,
-      title: "MIDTOWN DUBAI",
-      scope: "FCU & Valve Package Installation",
+      image: chwPiping,
+      title: "REVOULT OFFICE, CENTRAL PARK OFFICE TOWER-1",
+      scope: "CHW Piping, FCU Installation & Valve Package",
+      status: "Ongoing",
+      date: "In Progress",
+      location: "DIFC, Dubai",
+      client: "Revoult International",
+      description: "Installation of CHW piping, FCU installation and valve package for premium office tower in Dubai International Financial Centre.",
+      value: "AED 2.1M",
+      duration: "8 months"
+    },
+    {
+      image: hvacDuctwork,
+      title: "TRYANO-YASMALL",
+      scope: "BTU Assembly Installation",
       status: "Completed",
-      date: "Oct 2022",
+      date: "Aug 2021",
+      location: "UAE",
+      client: "Tryano Development",
+      description: "Installation of BTU assembly for commercial and residential mixed-use development project.",
+      value: "AED 680K",
+      duration: "3 months"
+    },
+    {
+      image: valvePackage,
+      title: "THE VIDA DUBAI MALL",
+      scope: "Complete FCU & CHW System Installation",
+      status: "Completed",
+      date: "Jan 2022",
       location: "Dubai, UAE",
-      client: "Midtown Development",
-      description: "Installation of FCU & Valve Package with pressure test, insulation and foster for modern commercial development.",
-      value: "AED 1.2M",
-      duration: "6 months"
+      client: "Emaar Hospitality",
+      description: "Installation of FCUs, valve package, CHW piping with pressure test and insulation, CHW Riser, and Pumps and Heat Exchanger with Valve Package and Piping.",
+      value: "AED 3.2M",
+      duration: "10 months"
+    },
+    {
+      image: chwPiping,
+      title: "QARYAT AL HIDD DEVELOPMENT",
+      scope: "FCUs, Valve Package & CHW System",
+      status: "Completed",
+      date: "Nov 2021",
+      location: "Saadiyat Island, Abu Dhabi, UAE",
+      client: "Aldar Properties",
+      description: "Installation of FCUs, valve package, CHW piping with pressure test and insulation, and CHW Riser for luxury residential development.",
+      value: "AED 2.8M",
+      duration: "9 months"
+    },
+    {
+      image: hvacDuctwork,
+      title: "Villa# 09, AL JUMAIRAH ISLAND",
+      scope: "Luxury Villa MEP Systems",
+      status: "Completed",
+      date: "May 2021",
+      location: "Dubai, UAE",
+      client: "Private Villa Owner",
+      description: "Installation of FCUs, valve package, CHW piping with pressure test and insulation for premium waterfront villa.",
+      value: "AED 890K",
+      duration: "4 months"
+    },
+    {
+      image: valvePackage,
+      title: "NMC Hospital Extension",
+      scope: "Hospital MEP Infrastructure",
+      status: "Completed",
+      date: "Dec 2022",
+      location: "DIP Dubai",
+      client: "NMC Healthcare",
+      description: "Proposed B+G+3+ Roof extension including FCUs, valve package, CHW piping with pressure test and insulation, CHW Riser, and Pumps and Heat Exchanger with underground Piping.",
+      value: "AED 4.1M",
+      duration: "12 months"
     },
     {
       image: chwPiping,
