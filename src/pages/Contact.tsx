@@ -379,7 +379,7 @@ const Contact = () => {
                 </p>
                 <Button variant="outline" className="mt-4" asChild>
                   <a 
-                    href="https://maps.google.com" 
+                    href="https://maps.app.goo.gl/n7vrNxnWRonnK8hw9?g_st=aw" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
