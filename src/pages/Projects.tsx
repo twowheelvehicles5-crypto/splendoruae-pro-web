@@ -10,6 +10,66 @@ import valvePackage from "@/assets/valve-package.jpg";
 const Projects = () => {
   const projects = [
     {
+      image: valvePackage,
+      title: "MIDTOWN DUBAI",
+      scope: "FCU & Valve Package Installation",
+      status: "Completed",
+      date: "Oct 2022",
+      location: "Dubai, UAE",
+      client: "Midtown Development",
+      description: "Installation of FCU & Valve Package with pressure test, insulation and foster for modern commercial development.",
+      value: "AED 1.2M",
+      duration: "6 months"
+    },
+    {
+      image: chwPiping,
+      title: "OFF-CAMPUS STUDENT HOUSING",
+      scope: "Chiller Water Piping Installation",
+      status: "Completed",
+      date: "Nov 2020",
+      location: "Academic City, Dubai",
+      client: "Academic Housing Authority",
+      description: "Installation of chiller water piping and branches with insulation in BLOCK-B & BLOCK-G for student accommodation facility.",
+      value: "AED 950K",
+      duration: "4 months"
+    },
+    {
+      image: hvacDuctwork,
+      title: "SEVENTH HEAVEN - AL BRARI",
+      scope: "GI Ducting & Fire Rated Duct Installation",
+      status: "Completed",
+      date: "Jun 2020",
+      location: "Dubai, UAE",
+      client: "Seventh Heaven Development",
+      description: "Installation of GI ducting with insulation upper and lower ground, and installation of fire rated duct systems.",
+      value: "AED 1.1M",
+      duration: "5 months"
+    },
+    {
+      image: hvacDuctwork,
+      title: "Fakeeh University Hospital",
+      scope: "Comprehensive Ducting Installation",
+      status: "Completed",
+      date: "Sep 2021",
+      location: "Silicone Oasis, Dubai",
+      client: "Fakeeh Healthcare",
+      description: "Installation of GI, FIRERATED, MS, SS ducting with insulation for state-of-the-art medical facility.",
+      value: "AED 2.8M",
+      duration: "8 months"
+    },
+    {
+      image: chwPiping,
+      title: "Success Point College",
+      scope: "Complete HVAC & CHW System",
+      status: "Ongoing",
+      date: "In Progress",
+      location: "Al Rayyan Building, Sharjah",
+      client: "Success Point Education",
+      description: "Installation of FAHU, AHU, FCU and CHW piping, valve package with insulation, Pressure Testing and Flushing.",
+      value: "AED 1.9M",
+      duration: "10 months"
+    },
+    {
       image: chwPiping,
       title: "City Life Al Tallha - Ajman",
       scope: "FCUs, CHW Piping, Valve Package Installation",
