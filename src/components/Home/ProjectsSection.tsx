@@ -97,8 +97,8 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="hero" size="lg" asChild>
+        <div className="text-center mt-10 sm:mt-12">
+          <Button variant="hero" size="lg" className="touch-target" asChild>
             <Link to="/projects">View All Projects</Link>
           </Button>
         </div>

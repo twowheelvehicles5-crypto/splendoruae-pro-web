@@ -44,40 +44,40 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary" id="services">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+    <section className="py-16 sm:py-20 md:py-24 bg-secondary" id="services">
+      <div className="container mx-auto">
+        <div className="text-center mb-12 sm:mb-16">
           <h2 className="mb-4">Our Expert Services</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Comprehensive MEP and HVAC solutions tailored to meet the unique requirements 
             of commercial and residential projects across the UAE.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="shadow-card hover:shadow-elegant transition-smooth group hover:-translate-y-2">
-              <CardHeader>
-                <div className="text-accent mb-4 group-hover:scale-110 transition-smooth">
+            <Card key={index} className="shadow-card hover:shadow-elegant transition-smooth group hover:-translate-y-2 h-full">
+              <CardHeader className="pb-4">
+                <div className="text-accent mb-4 sm:mb-6 group-hover:scale-110 transition-smooth">
                   {service.icon}
                 </div>
-                <CardTitle className="text-xl group-hover:text-accent transition-smooth">
+                <CardTitle className="text-lg sm:text-xl group-hover:text-accent transition-smooth mb-2">
                   {service.title}
                 </CardTitle>
-                <CardDescription className="text-base">
+                <CardDescription className="text-sm sm:text-base leading-relaxed">
                   {service.description}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 mb-6">
+              <CardContent className="pt-0">
+                <ul className="space-y-2 sm:space-y-3 mb-6">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm">
-                      <div className="w-2 h-2 bg-accent rounded-full"></div>
-                      {feature}
+                    <li key={idx} className="flex items-center gap-2 sm:gap-3 text-sm">
+                      <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0"></div>
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full group-hover:variant-accent transition-smooth">
+                <Button variant="outline" className="w-full group-hover:variant-accent transition-smooth touch-target">
                   Learn More
                 </Button>
               </CardContent>
@@ -85,8 +85,8 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="hero" size="lg" asChild>
+        <div className="text-center mt-10 sm:mt-12">
+          <Button variant="hero" size="lg" className="touch-target" asChild>
             <Link to="/services">View All Services</Link>
           </Button>
         </div>
