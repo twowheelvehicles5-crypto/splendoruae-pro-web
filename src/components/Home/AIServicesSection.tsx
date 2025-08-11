@@ -106,9 +106,14 @@ const AIServicesSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
+              <a href="https://digibabaa.co/" target="_blank" rel="noopener noreferrer">
+                Visit Digibabaa Website
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
               <Link to="/contact">
                 Get Free Consultation
-                <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
             <Button variant="outline" size="lg">
