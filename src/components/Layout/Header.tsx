@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className="bg-background shadow-card sticky top-0 z-50 border-b border-border/10">
       {/* Top Contact Bar */}
-      <div className="bg-primary text-primary-foreground py-2 sm:py-3">
+      <div className="bg-primary text-primary-foreground py-1 sm:py-2">
         <div className="container mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-2 sm:gap-4">
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
@@ -43,14 +43,14 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <div className="container mx-auto py-4 sm:py-6 lg:py-8">
+      <div className="container mx-auto py-2 sm:py-3 lg:py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center justify-center flex-shrink-0">
             <img 
               src="/lovable-uploads/ed0e910b-b807-4822-b27f-8476ed5e2ec5.png" 
               alt="SplendorUAE - HVAC Reliable Solution" 
-              className="h-20 sm:h-24 md:h-28 lg:h-32 xl:h-36 w-auto max-w-full object-contain"
+              className="h-12 sm:h-14 md:h-16 lg:h-18 xl:h-20 w-auto max-w-full object-contain"
               loading="eager"
               decoding="async"
             />
