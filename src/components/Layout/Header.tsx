@@ -43,14 +43,14 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <div className="container mx-auto py-3 sm:py-4">
+      <div className="container mx-auto py-4 sm:py-6 lg:py-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center flex-shrink-0">
+          <Link to="/" className="flex items-center justify-center flex-shrink-0">
             <img 
               src="/lovable-uploads/ed0e910b-b807-4822-b27f-8476ed5e2ec5.png" 
               alt="SplendorUAE - HVAC Reliable Solution" 
-              className="h-14 sm:h-16 md:h-18 lg:h-20 w-auto"
+              className="h-20 sm:h-24 md:h-28 lg:h-32 xl:h-36 w-auto max-w-full object-contain"
               loading="eager"
               decoding="async"
             />
