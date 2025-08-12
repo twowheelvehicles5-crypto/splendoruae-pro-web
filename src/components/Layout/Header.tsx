@@ -50,7 +50,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/ed0e910b-b807-4822-b27f-8476ed5e2ec5.png" 
               alt="SplendorUAE - HVAC Reliable Solution" 
-              className="h-10 sm:h-12 w-auto"
+              className="h-14 sm:h-16 md:h-18 lg:h-20 w-auto"
               loading="eager"
               decoding="async"
             />
