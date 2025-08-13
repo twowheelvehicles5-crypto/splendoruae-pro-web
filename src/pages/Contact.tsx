@@ -88,11 +88,11 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  <a href="tel:+971501234567" className="hover:text-accent transition-smooth">
-                    +971 50 123 4567
-                  </a><br />
-                  <a href="tel:+97145678901" className="hover:text-accent transition-smooth">
-                    +971 4 567 8901
+                  <a href="tel:+971568423944" className="hover:text-accent transition-smooth block mb-1">
+                    +971 56 842 3944
+                  </a>
+                  <a href="tel:+971562578722" className="hover:text-accent transition-smooth block">
+                    +971 56 257 8722
                   </a>
                 </p>
               </CardContent>
