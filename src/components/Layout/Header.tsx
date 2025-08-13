@@ -53,8 +53,8 @@ const Header = () => {
       {/* Main Header */}
       <div className="container mx-auto py-2 sm:py-3 lg:py-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <Link to="/" className="flex items-center justify-center flex-shrink-0">
+          {/* Logo and Company Name */}
+          <Link to="/" className="flex items-center gap-3 flex-shrink-0">
             <img 
               src="/lovable-uploads/ed0e910b-b807-4822-b27f-8476ed5e2ec5.png" 
               alt="SplendorUAE - HVAC Reliable Solution" 
@@ -62,6 +62,14 @@ const Header = () => {
               loading="eager"
               decoding="async"
             />
+            <div className="hidden sm:block">
+              <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary leading-tight">
+                SPLENDOR HOME<br />
+                <span className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-muted-foreground">
+                  TECHNICAL SERVICES LLC
+                </span>
+              </h1>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
