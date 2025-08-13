@@ -26,9 +26,9 @@ const Header = () => {
         <div className="container mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-2 sm:gap-4">
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-              <a href="tel:+971501234567" className="flex items-center gap-2 hover:text-accent transition-smooth touch-target">
+              <a href="tel:+971568423944" className="flex items-center gap-2 hover:text-accent transition-smooth touch-target">
                 <Phone className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
-                <span className="whitespace-nowrap">+971 50 123 4567</span>
+                <span className="whitespace-nowrap">56 842 3944 & +971 56 257 8722</span>
               </a>
               <a href="mailto:info@splendoruae.com" className="flex items-center gap-2 hover:text-accent transition-smooth touch-target">
                 <Mail className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />

@@ -401,14 +401,14 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
-              <a href="tel:+971501234567" className="flex items-center gap-2">
+              <a href="tel:+971568423944" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                Call Now: +971 50 123 4567
+                Call Now: 56 842 3944 & +971 56 257 8722
               </a>
             </Button>
             <Button variant="accent" size="lg" asChild>
               <a 
-                href="https://api.whatsapp.com/send?phone=971562578722" 
+                href="https://api.whatsapp.com/send?phone=971562578722"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

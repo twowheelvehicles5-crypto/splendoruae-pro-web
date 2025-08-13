@@ -62,8 +62,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-accent flex-shrink-0" />
-                <a href="tel:+971501234567" className="hover:text-accent transition-smooth touch-target">
-                  +971 50 123 4567
+                <a href="tel:+971568423944" className="hover:text-accent transition-smooth touch-target">
+                  56 842 3944 & +971 56 257 8722
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -82,7 +82,7 @@ const Footer = () => {
             <p>&copy; 2024 SplendorUAE. All rights reserved.</p>
             <div className="flex items-center gap-4 flex-wrap justify-center">
               <a 
-                href="https://api.whatsapp.com/send?phone=971562578722" 
+                href="https://api.whatsapp.com/send?phone=971562578722"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-accent hover:text-accent/80 transition-smooth touch-target"
