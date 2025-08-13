@@ -72,9 +72,9 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Business Bay<br />
-                  Dubai, UAE<br />
-                  P.O. Box 12345
+                  401, Building 44, Al Murar – Deira<br />
+                  Al Murar – Dubai<br />
+                  United Arab Emirates
                 </p>
               </CardContent>
             </Card>
@@ -374,7 +374,8 @@ const Contact = () => {
                 <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">SplendorUAE Office</h3>
                 <p className="text-muted-foreground">
-                  Business Bay, Dubai, UAE<br />
+                  401, Building 44, Al Murar – Deira<br />
+                  Al Murar – Dubai, UAE<br />
                   Google Maps integration available
                 </p>
                 <Button variant="outline" className="mt-4" asChild>
@@ -403,7 +404,7 @@ const Contact = () => {
             <Button variant="hero" size="lg" asChild>
               <a href="tel:+971568423944" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                Call Now: 56 842 3944 & +971 56 257 8722
+                Call Now: +971 56 842 3944
               </a>
             </Button>
             <Button variant="accent" size="lg" asChild>
