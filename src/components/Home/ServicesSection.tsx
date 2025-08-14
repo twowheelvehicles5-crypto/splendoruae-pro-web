@@ -1,9 +1,13 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Settings, Thermometer, Wrench, Shield, Zap, Wind } from "lucide-react";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { Settings, Thermometer, Wrench, Shield, Zap, Wind, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const ServicesSection = () => {
+  const [expandedService, setExpandedService] = useState<number | null>(null);
+  
   const services = [
     {
       icon: <Settings className="w-8 h-8" />,
@@ -77,17 +81,40 @@ const ServicesSection = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="pt-0">
-                <ul className="space-y-2 sm:space-y-3 mb-6">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 sm:gap-3 text-sm">
-                      <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0"></div>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button variant="outline" className="w-full group-hover:variant-accent transition-smooth touch-target">
-                  Learn More
-                </Button>
+                <Collapsible open={expandedService === index} onOpenChange={(open) => setExpandedService(open ? index : null)}>
+                  <ul className="space-y-2 sm:space-y-3 mb-6">
+                    {/* Show first 3 features */}
+                    {service.features.slice(0, 3).map((feature, idx) => (
+                      <li key={idx} className="flex items-center gap-2 sm:gap-3 text-sm">
+                        <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0"></div>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                    
+                    {/* Show remaining features when expanded */}
+                    <CollapsibleContent className="space-y-2 sm:space-y-3">
+                      {service.features.slice(3).map((feature, idx) => (
+                        <li key={idx + 3} className="flex items-center gap-2 sm:gap-3 text-sm">
+                          <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0"></div>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </CollapsibleContent>
+                  </ul>
+                  
+                  {service.features.length > 3 ? (
+                    <CollapsibleTrigger asChild>
+                      <Button variant="outline" className="w-full group-hover:variant-accent transition-smooth touch-target">
+                        {expandedService === index ? 'Show Less' : 'Learn More'}
+                        <ChevronDown className={`w-4 h-4 ml-2 transition-transform ${expandedService === index ? 'rotate-180' : ''}`} />
+                      </Button>
+                    </CollapsibleTrigger>
+                  ) : (
+                    <Button variant="outline" className="w-full group-hover:variant-accent transition-smooth touch-target">
+                      Learn More
+                    </Button>
+                  )}
+                </Collapsible>
               </CardContent>
             </Card>
           ))}
