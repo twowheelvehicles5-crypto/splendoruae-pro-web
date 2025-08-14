@@ -56,8 +56,8 @@ const Header = () => {
           {/* Logo and Company Name */}
           <Link to="/" className="flex items-center gap-3 flex-shrink-0">
             <img 
-              src="/lovable-uploads/ed0e910b-b807-4822-b27f-8476ed5e2ec5.png" 
-              alt="SplendorUAE - HVAC Reliable Solution" 
+              src="/lovable-uploads/dfcd7ae6-b74e-48fe-b2e2-9d7f88ecb54b.png" 
+              alt="Splendor Home - HVAC Reliable Solution" 
               className="h-12 sm:h-14 md:h-16 lg:h-18 xl:h-20 w-auto max-w-full object-contain"
               loading="eager"
               decoding="async"
