@@ -15,11 +15,13 @@ const Services = () => {
       description: "Complete chilled water piping systems designed and installed to the highest industry standards.",
       image: chwPiping,
       features: [
-        "Custom pipe fabrication",
-        "Professional installation",
-        "Testing & commissioning",
-        "Insulation services",
-        "System optimization"
+        "Supply and inspection of pipes, fittings, and insulation",
+        "Pipe routing and support installation as per approved drawings",
+        "Pipe joining by threading, grooving, or welding",
+        "Application of thermal insulation to all CHW pipes",
+        "Hydrostatic pressure testing of the installed system",
+        "Installation of valves, fittings, and accessories",
+        "Final inspection, labeling, and documentation"
       ],
       applications: ["Commercial buildings", "Residential complexes", "Industrial facilities"]
     },

@@ -9,7 +9,15 @@ const ServicesSection = () => {
       icon: <Settings className="w-8 h-8" />,
       title: "CHW Piping Systems",
       description: "Complete chilled water piping fabrication, installation, and commissioning for commercial buildings.",
-      features: ["Pipe Fabrication", "Installation", "Testing & Commissioning"]
+      features: [
+        "Supply and inspection of pipes, fittings, and insulation",
+        "Pipe routing and support installation as per approved drawings",
+        "Pipe joining by threading, grooving, or welding",
+        "Application of thermal insulation to all CHW pipes",
+        "Hydrostatic pressure testing of the installed system",
+        "Installation of valves, fittings, and accessories",
+        "Final inspection, labeling, and documentation"
+      ]
     },
     {
       icon: <Thermometer className="w-8 h-8" />,
