@@ -1,99 +1,48 @@
 import Layout from "@/components/Layout/Layout";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Settings, Thermometer, Wrench, Shield, Zap, Wind, CheckCircle } from "lucide-react";
-import chwPiping from "@/assets/chw-piping.jpg";
-import hvacDuctwork from "@/assets/hvac-ductwork.jpg";
-import valvePackage from "@/assets/valve-package.jpg";
+import { Droplets, Wind, Settings, CheckCircle } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: <Settings className="w-10 h-10" />,
-      title: "CHW Piping Fabrication & Installation",
-      description: "Complete chilled water piping systems designed and installed to the highest industry standards.",
-      image: chwPiping,
+      icon: <Droplets className="w-12 h-12 text-accent" />,
+      title: "CHW Pipe Installation",
       features: [
-        "Supply and inspection of pipes, fittings, and insulation",
-        "Pipe routing and support installation as per approved drawings",
-        "Pipe joining by threading, grooving, or welding",
-        "Application of thermal insulation to all CHW pipes",
-        "Hydrostatic pressure testing of the installed system",
-        "Installation of valves, fittings, and accessories",
-        "Final inspection, labeling, and documentation"
-      ],
-      applications: ["Commercial buildings", "Residential complexes", "Industrial facilities"]
+        "Supply and inspection of pipes & fittings.",
+        "Routing and support installation.",
+        "Pipe joining (threading, grooving, welding).",
+        "Thermal insulation of CHW pipes.",
+        "Hydrostatic pressure testing.",
+        "Valves & accessories installation.",
+        "Final inspection & documentation."
+      ]
     },
     {
-      icon: <Thermometer className="w-10 h-10" />,
-      title: "CHW Pumps & Heat Exchanger Installation",
-      description: "Expert installation and maintenance of heat transfer systems for optimal energy efficiency.",
-      image: valvePackage,
+      icon: <Wind className="w-12 h-12 text-accent" />,
+      title: "HVAC Installation",
       features: [
-        "Heat exchanger installation",
-        "Pump selection & setup",
-        "Performance optimization",
-        "Energy efficiency analysis",
-        "Preventive maintenance"
-      ],
-      applications: ["HVAC systems", "Process cooling", "District cooling"]
+        "Supply and installation of HVAC units.",
+        "Ductwork fabrication & insulation.",
+        "Refrigerant piping & condensate drains.",
+        "Electrical & control wiring.",
+        "Equipment alignment & vibration isolation.",
+        "Testing & commissioning.",
+        "Final inspection & handover."
+      ]
     },
     {
-      icon: <Wrench className="w-10 h-10" />,
-      title: "Valve Package Installation",
-      description: "Comprehensive valve solutions including control systems and automation integration.",
-      image: valvePackage,
+      icon: <Settings className="w-12 h-12 text-accent" />,
+      title: "MJE HVAC Installation",
       features: [
-        "Control valve installation",
-        "Safety valve systems",
-        "Automation integration",
-        "System calibration",
-        "Regular maintenance"
-      ],
-      applications: ["Process control", "Safety systems", "Flow regulation"]
-    },
-    {
-      icon: <Shield className="w-10 h-10" />,
-      title: "HVAC System Installation & Maintenance",
-      description: "Complete HVAC solutions from design to installation and ongoing maintenance.",
-      image: hvacDuctwork,
-      features: [
-        "System design & planning",
-        "Professional installation",
-        "Regular maintenance",
-        "Emergency repairs",
-        "Energy audits"
-      ],
-      applications: ["Commercial spaces", "Residential buildings", "Healthcare facilities"]
-    },
-    {
-      icon: <Wind className="w-10 h-10" />,
-      title: "Extract Duct & Kitchen Extract Installation",
-      description: "Specialized ventilation systems for commercial kitchens and industrial applications.",
-      image: hvacDuctwork,
-      features: [
-        "Kitchen extract systems",
-        "Fire safety compliance",
-        "Grease management",
-        "Noise control",
-        "Maintenance programs"
-      ],
-      applications: ["Restaurants", "Commercial kitchens", "Food processing"]
-    },
-    {
-      icon: <Zap className="w-10 h-10" />,
-      title: "Other MEP & HVAC Works",
-      description: "Comprehensive mechanical, electrical, and plumbing services for all project types.",
-      image: chwPiping,
-      features: [
-        "Electrical installations",
-        "Plumbing systems",
-        "Fire safety systems",
-        "Building automation",
-        "Energy management"
-      ],
-      applications: ["Mixed-use developments", "Industrial projects", "Infrastructure"]
+        "Installation of chillers, AHUs, FCUs & pumps.",
+        "Ducting, piping, insulation & air outlets.",
+        "Electrical cabling & panel integration.",
+        "Connection with Building Management System (BMS).",
+        "Testing, adjusting & balancing (TAB).",
+        "Commissioning & performance verification.",
+        "System labeling & handover."
+      ]
     }
   ];
 
@@ -103,7 +52,7 @@ const Services = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="mb-6">Our Professional Services</h1>
+            <h1 className="mb-6">Our Services – HVAC & MEP Solutions</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Comprehensive MEP and HVAC solutions designed to meet the unique requirements 
               of every project. From concept to completion, we deliver excellence.
@@ -115,58 +64,28 @@ const Services = () => {
       {/* Services Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="space-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <div className="text-accent mb-4">
+              <Card key={index} className="h-full border border-border/50 shadow-elegant hover:shadow-glow transition-all duration-300">
+                <CardHeader className="text-center pb-4">
+                  <div className="flex justify-center mb-4">
                     {service.icon}
                   </div>
-                  <h3 className="text-2xl font-semibold text-primary mb-4">
+                  <CardTitle className="text-xl font-semibold text-primary">
                     {service.title}
-                  </h3>
-                  <p className="text-lg text-muted-foreground mb-6">
-                    {service.description}
-                  </p>
-
-                  {/* Features */}
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-primary mb-3">Key Features:</h4>
-                    <ul className="space-y-2">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center gap-2">
-                          <CheckCircle className="w-5 h-5 text-accent" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Applications */}
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-primary mb-3">Applications:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {service.applications.map((app, idx) => (
-                        <Badge key={idx} variant="outline">
-                          {app}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  <Button variant="hero">
-                    Get Quote for This Service
-                  </Button>
-                </div>
-
-                <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-80 object-cover rounded-lg shadow-elegant"
-                  />
-                </div>
-              </div>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-muted-foreground">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
